@@ -9,16 +9,15 @@
 
 <body>
     <script>
-        let accessAllowed;
-        let age = prompt('Скільки papa років?', '');
+        'use strict';
 
-        if (age == 49) {
-            accessAllowed = true;
+        let value = prompt('Яка "офіційна" назва JavaScript?', '');
+
+        if (value == 'ECMAScript') {
+            alert('Правильно!');
         } else {
-            accessAllowed = false;
+            alert('Ви не знаєте? ECMAScript!');
         }
-
-        alert(accessAllowed);
     </script>
 
     <header>
