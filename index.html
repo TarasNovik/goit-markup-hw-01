@@ -11,13 +11,10 @@
     <script>
         'use strict';
 
-        let value = prompt('Яка "офіційна" назва JavaScript?', '');
-
-        if (value == 'ECMAScript') {
-            alert('Правильно!');
-        } else {
-            alert('Ви не знаєте? ECMAScript!');
-        }
+        let message = (login == 'Працівник') ? 'Привіт' :
+            (login == 'Директор') ? 'Вітаю' :
+                (login == '') ? 'Немає логіну' :
+                    '';
     </script>
 
     <header>
