@@ -9,10 +9,13 @@
 
 <body>
     <script>
-        'use strict';
+        let year = prompt('В якому році була опублікована специфікація ECMAScript-2015?', '');
 
-        let name = prompt("Як вас звати?", "");
-        alert(name);
+        if (year == 2015) {
+            alert('Ви здогадалися правильно!');
+        } else {
+            alert('Як ви можете так помилятися?'); // будь-яке значення, окрім 2015
+        }
     </script>
 
     <header>
