@@ -9,13 +9,16 @@
 
 <body>
     <script>
-        let year = prompt('В якому році була опублікована специфікація ECMAScript-2015?', '');
+        let accessAllowed;
+        let age = prompt('Скільки papa років?', '');
 
-        if (year == 2015) {
-            alert('Ви здогадалися правильно!');
+        if (age > 49) {
+            accessAllowed = true;
         } else {
-            alert('Як ви можете так помилятися?'); // будь-яке значення, окрім 2015
+            accessAllowed = false;
         }
+
+        alert(accessAllowed);
     </script>
 
     <header>
