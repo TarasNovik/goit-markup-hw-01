@@ -8,28 +8,7 @@
 </head>
 
 <body>
-    <script>
-        'use strict';
-        let userName = prompt('Хто там?', '');
 
-        if (userName === 'Admin') {
-
-            let pass = prompt('Пароль?', '');
-
-            if (pass === 'Господар') {
-                alert('Ласкаво просимо!');
-            } else if (pass === '' || pass === null) {
-                alert('Скасовано');
-            } else {
-                alert('Неправильний пароль');
-            }
-
-        } else if (userName === '' || userName === null) {
-            alert('Скасовано');
-        } else {
-            alert('Я вас не знаю');
-        }
-    </script>
 
     <header>
         <nav>
@@ -54,7 +33,7 @@
         <section>
             <h1>Effective Solutions for Your Business
             </h1>
-            <button type="button">Order Service</button>
+            <button type="button" onclick="document.getElementById('demo').style.display='blok'">Order Service</button>
         </section>
         <section>
             <h2>Advantages</h2>
@@ -84,7 +63,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="demo" style="display: none;">
             <h2>Our Team</h2>
             <ul>
                 <li>
